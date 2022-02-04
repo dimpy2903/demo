@@ -1,0 +1,24 @@
+<p>c19panel works!</p>
+<table class="table table-bordered">
+    <tr class="bg-warning">
+        <th>pid</th>
+        <th>catid</th>
+        <th>prod name</th>
+        <th>prod img</th>
+        <th>prod desc</th>
+        <th>prod price</th>
+        <th>prod qty</th>        
+    </tr>
+    
+        <tr *ngFor="let p of products">
+            <td>{{p.pid}}</td>
+            <td>{{p.catid}}</td>
+            <td>{{p.name}}</td>
+            <td>{{p.img}}</td>
+            <td>{{p.desc}}</td>
+            <td>{{p.price}}</td>
+            <td>{{p.qty}}</td>
+        </tr>
+    
+    
+</table>

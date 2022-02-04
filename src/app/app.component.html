@@ -1,0 +1,57 @@
+<!-- <app-search-bar></app-search-bar> -->
+<app-c17dashboard></app-c17dashboard> 
+<!-- <app-c11cat></app-c11cat> -->
+<!-- <app-c12prod></app-c12prod> -->
+<!-- <app-c9prod></app-c9prod> -->
+<!-- <app-n1></app-n1>
+<app-n2></app-n2> -->
+<!-- <app-c8custompipe></app-c8custompipe> -->
+<!-- <app-c7inbuiltpipe></app-c7inbuiltpipe> -->
+<!-- <app-c6></app-c6> -->
+<!-- <app-c5atbtdir></app-c5atbtdir> -->
+<!-- <app-c3directive></app-c3directive> -->
+<!-- <app-c1></app-c1> -->
+
+<div class="container">
+    <div class="row">
+        <header class="col-md-12">
+            <img src='../assets/images/header.jpg'/>
+        </header>
+    </div>
+
+    <div class="row">
+            <nav class="col-md-12">
+                <ul class="nav nav-tabs justify-content-end">
+                    
+                    <li ><a class="nav-link" [routerLink]="['home']" >home</a></li>
+                    <li><a class="nav-link" [routerLink]="['users']" >User</a></li>
+                    <li><a class="nav-link" [routerLink]="['products']">Products</a></li>
+                    <li><a class="nav-link" [routerLink]="['db']">Dashboard</a></li>
+                    <li><a class="nav-link" [routerLink]="['categories']">cat</a></li>
+                    
+                </ul>
+            </nav>
+    </div>
+
+    <div class="row main-content">
+        <div class="col-md-4">
+            <ul class="nav flex-column nav-tabs">
+                <li ><a class="nav-link" [routerLink]="['home']" >home</a></li>
+                    <li><a class="nav-link" [routerLink]="['users']" >User</a></li>
+                    <li><a class="nav-link" [routerLink]="['products']">Products</a></li>
+                    <li><a class="nav-link" [routerLink]="['db']">Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="col-md-8" style="background-color: darkgray;">
+            main content -  here routes 
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <div class="row">
+        <footer class="col-md-12 footer">
+            <p class="text-center">copy right @ 2022 itl</p>
+        </footer>
+    </div>
+
+</div>

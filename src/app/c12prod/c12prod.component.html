@@ -1,0 +1,26 @@
+
+{{catid}}
+
+<table class="p-5">
+        <tr>
+            <th>catid</th>
+            <th>pid</th>
+            <th>pname</th>
+            <th>pimg</th>
+            <th>pdesc</th>
+            <th>pprice</th>
+            <th>pqty</th>
+        </tr>
+        <ng-container *ngFor="let p of products">
+            <tr  *ngIf="p.catid==catid">
+                <td>{{p.catid}}</td>
+                <td>{{p.pid}}</td>
+                <td>{{p.name}}</td>
+                <td>{{p.img}}</td>
+                <td>{{p.desc}}</td>
+                <td>{{p.price}}</td>
+                <td>{{p.qty}}</td>
+            </tr>
+        </ng-container>
+        
+</table>
