@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-12">
+        <app-addimage *ngIf="!(urlArray && urlArray.length > 0)" (product)="onfileselect($event)"></app-addimage>
+        <!-- <input type="file" (change)="onSelectFile($event)"> -->
+        <div class="selectedImage" *ngIf="(urlArray && urlArray.length > 0)">
+          <div class="container">
+            <img [src]="urlArray[0]" alt="" srcset="" width="200px"><br>
+         
+          <button type="button" (click)="removeImage()" class="btn btn-round btn-primary m-0 mt-3">Remove
+            image</button>
+        </div>
+        </div>
+      </div>
+</div>

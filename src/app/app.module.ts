@@ -20,6 +20,8 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { ProductsComponent } from './products/products.component';
+import { AddimageComponent } from './components/addimage/addimage.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { ProductsComponent } from './products/products.component';
     C12prodComponent,
     C17dashboardComponent,
     C18infoComponent,
-    C19panelComponent
+    C19panelComponent,
+    AddimageComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
